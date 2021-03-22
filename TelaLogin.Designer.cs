@@ -33,7 +33,7 @@ namespace TelaLogin
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -72,22 +72,22 @@ namespace TelaLogin
             this.lblEmail.TabIndex = 4;
             this.lblEmail.Text = "Email:";
             // 
-            // label1
+            // lblSenha
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 239);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 24);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Login";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(47, 239);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(82, 24);
+            this.lblSenha.TabIndex = 5;
+            this.lblSenha.Text = "Senha:";
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(283, 339);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -105,7 +105,7 @@ namespace TelaLogin
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSenha;
     }
 }
 
