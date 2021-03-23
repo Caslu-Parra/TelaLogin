@@ -19,7 +19,18 @@ namespace TelaLogin
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            
+            Usuario user = new Usuario();
+
+            user.Email = txbEmail.Text;
+            user.Senha = txbSenha.Text;
+
+            if (db.UsuarioDAO.login(user))
+            {
+                MessageBox.Show("User Válido");
+            }
+            else { 
+                MessageBox.Show("User Inválido");
+            }
         }
     }
 }

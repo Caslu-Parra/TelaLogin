@@ -30,7 +30,7 @@ namespace TelaLogin
         private void InitializeComponent()
         {
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbSenha = new System.Windows.Forms.TextBox();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
@@ -48,13 +48,13 @@ namespace TelaLogin
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Login";
             // 
-            // textBox1
+            // txbSenha
             // 
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(51, 226);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 30);
-            this.textBox1.TabIndex = 1;
+            this.txbSenha.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSenha.Location = new System.Drawing.Point(51, 226);
+            this.txbSenha.Name = "txbSenha";
+            this.txbSenha.Size = new System.Drawing.Size(186, 30);
+            this.txbSenha.TabIndex = 1;
             // 
             // txbEmail
             // 
@@ -115,7 +115,7 @@ namespace TelaLogin
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txbEmail);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbSenha);
             this.Controls.Add(this.lblTitulo);
             this.Name = "FormLogin";
             this.Text = "Login";
@@ -127,7 +127,7 @@ namespace TelaLogin
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbSenha;
         private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblSenha;

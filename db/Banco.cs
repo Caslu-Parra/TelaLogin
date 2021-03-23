@@ -11,12 +11,10 @@ namespace TelaLogin.db
 {
     class Banco
     {
-
         // Obj de conexão SQL.
-        public SQliteConnection conexao;
+        public SQLiteConnection conexao;
 
         // Construtor de conexão.
-
         public Banco()
         {
             // Aponta onde está o arquivo ".sql".
@@ -55,6 +53,8 @@ namespace TelaLogin.db
                 this.Desconectar();
             }
         }
+        
+        
         // Classe para conectar.
         public void Conectar()
         {
@@ -64,6 +64,8 @@ namespace TelaLogin.db
                 conexao.Open();
             }
         }
+        
+        
         // Classe para desconectar.
         public void Desconectar()
         {

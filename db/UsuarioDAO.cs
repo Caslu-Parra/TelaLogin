@@ -8,24 +8,38 @@ using System.Threading.Tasks;
 
 namespace TelaLogin.db
 {
-    class UsuarioDAO
+    static class UsuarioDAO
     {
-        public bool login(string email,string senha) {
-            // Definir o objeto de "tabela" que será preenchido com a consulta:
+
+        // Static Class UsuarioDAO;
+        public static bool login(Usuario user) {
             // Instanciar e conectar ao banco:
-            
             Banco banco = new Banco();
             banco.Conectar();
+
             // Criar o objeto SQLiteCommand:
             var cmd = banco.conexao.CreateCommand();
             // Definir qual comando DQL será executado:
-            cmd.CommandText = "SELECT * FROM Funcionarios WHERE id = " + id;
-            // Executar e "atribuir" o resultado em um objeto SQLiteDA
-            SQLiteDataAdapter da = new SQLiteDataAdapter(cmd.CommandText, banco.conexao);
-            // Definir qual "tabela" será preenchida com o resultado da consulta:
+
+            try
+            {
+                // Definir qual comando DML (Insert - Delete - Update) será executado:
+                cmd.CommandText = "SELECT * FROM Funcionarios WHERE Email = '@email' AND Senha = '@senha'";
+
+                cmd.Parameters.AddWithValue("@email", user.Email);
+                cmd.Parameters.AddWithValue("@senha", user.Senha);
+                // Executar:
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch 
+            {
+                return false;
+            }
             // Desconectar:
+
             banco.Desconectar();
-            return true;
+
         }
     }
 }
