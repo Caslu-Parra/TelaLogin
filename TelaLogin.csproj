@@ -84,6 +84,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroJanela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroJanela.Designer.cs">
+      <DependentUpon>CadastroJanela.cs</DependentUpon>
+    </Compile>
     <Compile Include="db\Banco.cs" />
     <Compile Include="db\UsuarioDAO.cs" />
     <Compile Include="TelaLogin.cs">

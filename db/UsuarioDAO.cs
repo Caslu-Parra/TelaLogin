@@ -24,7 +24,7 @@ namespace TelaLogin.db
             try
             {
                 // Definir qual comando DML (Insert - Delete - Update) será executado:
-                cmd.CommandText = "SELECT * FROM Funcionarios WHERE Email = '@email' AND Senha = '@senha'";
+                cmd.CommandText = "SELECT * FROM Usuarios WHERE Email = '@email' AND Senha = '@senha'";
 
                 cmd.Parameters.AddWithValue("@email", user.Email);
                 cmd.Parameters.AddWithValue("@senha", user.Senha);

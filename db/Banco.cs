@@ -22,7 +22,7 @@ namespace TelaLogin.db
 
             // Definir o caminho
             string caminhoLocalAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string caminho = caminhoLocalAppData + "/Restaurante Senac";
+            string caminho = caminhoLocalAppData + "/AtividadeSQL-DAO";
 
             // Verificar se o arquivo banco.sqlite3 NÃO existe:
             if (!File.Exists(caminho + "/banco.sqlite3"))
@@ -39,14 +39,13 @@ namespace TelaLogin.db
                 this.Conectar();
                 var cmd = this.conexao.CreateCommand();
                 // Comando SQL:
-                cmd.CommandText = "CREATE TABLE 'Funcionarios' (" +
-                 "'id'    INTEGER NOT NULL UNIQUE," +
+                cmd.CommandText = "CREATE TABLE 'Usuarios' (" +
+                "'Nascimento'    TEXT NOT NULL," +
+                "'Email' TEXT NOT NULL," +
+                "'Senha' TEXT NOT NULL," +
                 "'Nome'  TEXT NOT NULL," +
-                "'Setor' INTEGER NOT NULL," +
-                "'Email' TEXT NOT NULL UNIQUE," +
-                "'Telefone'  TEXT NOT NULL UNIQUE," +
-                "'Funcao'    TEXT NOT NULL," +
-                "PRIMARY KEY('id' AUTOINCREMENT));";
+                "PRIMARY KEY('Email'));";
+
                 // Executar o comando:
                 cmd.ExecuteNonQuery();
                 // Desconectar:
