@@ -152,6 +152,7 @@ namespace TelaLogin
             this.btnCadastro.TabIndex = 9;
             this.btnCadastro.Text = "Cadastra-se";
             this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // CadastroJanela
             // 
