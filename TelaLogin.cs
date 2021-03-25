@@ -52,25 +52,11 @@ namespace TelaLogin
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Usuario user = new Usuario();
+            CadastroJanela janelaCad = new CadastroJanela();
 
-            user.Email = txbEmail.Text;
-            user.Senha = txbSenha.Text;
-            user.Nome = "Lucas Parra";
-            user.Data = "12/08/2003";
-
-
-            txbEmail.Clear();
-            txbSenha.Clear();
-
-            if (db.UsuarioDAO.cadastrar(user))
-            {
-                MessageBox.Show(user.Nome + " foi cadastrado com sucesso!");
-            }
-            else {
-                MessageBox.Show("Não foi possível realizar o cadastro, verifique os dados informados!");
-            }
-
+            this.Hide();
+            janelaCad.ShowDialog();
+            this.Show();
         }
     }
 }

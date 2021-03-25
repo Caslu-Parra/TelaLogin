@@ -38,8 +38,26 @@ namespace TelaLogin
         {
             string ShaSenha = SHA256(txbSenha.Text);
             MessageBox.Show(ShaSenha);
-        }
-        // Teste
+            Usuario user = new Usuario();
 
+            user.Email = txbEmail.Text;
+            user.Senha = txbSenha.Text;
+            user.Nome = txbEmail.Text;
+            user.Data = txbDataNasc.Text;
+
+
+            txbEmail.Clear();
+            txbSenha.Clear();
+
+            if (db.UsuarioDAO.cadastrar(user))
+            {
+                MessageBox.Show(user.Nome + " foi cadastrado com sucesso!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Não foi possível realizar o cadastro, verifique os dados informados!");
+            }
+        }
     }
 }
