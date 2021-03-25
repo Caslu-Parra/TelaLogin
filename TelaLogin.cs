@@ -24,13 +24,53 @@ namespace TelaLogin
             user.Email = txbEmail.Text;
             user.Senha = txbSenha.Text;
 
-            if (db.UsuarioDAO.login(user))
+
+            txbEmail.Clear();
+            txbSenha.Clear();
+
+            DataTable resultado = new DataTable();
+            resultado = db.UsuarioDAO.login(user);
+
+            try
             {
-                MessageBox.Show("User Válido");
+                var linha = resultado.Rows[0];
+
+                if (linha.Field<string>("Senha") != user.Senha || linha.Field<string>("Email") != user.Email)
+                {
+                    MessageBox.Show("Usuário ou/e senha incorretos");
+                }
+                else
+                {
+                    MessageBox.Show("Usuário show");
+                }
             }
-            else { 
-                MessageBox.Show("User Inválido");
+            catch
+            {
+                MessageBox.Show("Usuário ou/e senha incorretos");
             }
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Usuario user = new Usuario();
+
+            user.Email = txbEmail.Text;
+            user.Senha = txbSenha.Text;
+            user.Nome = "Lucas Parra";
+            user.Data = "12/08/2003";
+
+
+            txbEmail.Clear();
+            txbSenha.Clear();
+
+            if (db.UsuarioDAO.cadastrar(user))
+            {
+                MessageBox.Show(user.Nome + " foi cadastrado com sucesso!");
+            }
+            else {
+                MessageBox.Show("Não foi possível realizar o cadastro, verifique os dados informados!");
+            }
+
         }
     }
 }
