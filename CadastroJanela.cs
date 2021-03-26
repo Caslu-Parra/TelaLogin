@@ -19,30 +19,15 @@ namespace TelaLogin
         {
             InitializeComponent();
         }
-        private string SHA256(string valor)
-        {
-             UnicodeEncoding UE = new UnicodeEncoding();
-            byte[] HashValue, MessageBytes = UE.GetBytes(valor);
-            SHA256Managed SHhash = new SHA256Managed();
-            string strHex = "";
 
-           HashValue = SHhash.ComputeHash(MessageBytes);
-            foreach (byte b in HashValue)
-               {
-                 strHex += String.Format("{0:x2}", b);
-               }
-           return strHex;
-        }
-
+        // Botao de cadastro de novo usuário.
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-            string ShaSenha = SHA256(txbSenha.Text);
-            MessageBox.Show(ShaSenha);
             Usuario user = new Usuario();
 
             user.Email = txbEmail.Text;
-            user.Senha = txbSenha.Text;
-            user.Nome = txbEmail.Text;
+            user.Senha = EasyEncryption.SHA.ComputeSHA256Hash(txbSenha.Text);
+            user.Nome = txbNome.Text;
             user.Data = txbDataNasc.Text;
 
 

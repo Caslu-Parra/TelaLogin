@@ -59,3 +59,38 @@ C:\Users\Maxwel\source\repos\AtvMax\TelaLogin\obj\Debug\TelaLogin.csproj.CoreCom
 C:\Users\Maxwel\source\repos\AtvMax\TelaLogin\obj\Debug\TelaLogin.csproj.CopyComplete
 C:\Users\Maxwel\source\repos\AtvMax\TelaLogin\obj\Debug\TelaLogin.exe
 C:\Users\Maxwel\source\repos\AtvMax\TelaLogin\obj\Debug\TelaLogin.pdb
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin\bin\Debug\EasyEncryption.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin\obj\Debug\TelaLogin.CadastroJanela.resources
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin\obj\Debug\TelaLogin.TelaPrincipal.resources
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\TelaLogin.exe.config
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\TelaLogin.exe
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\TelaLogin.pdb
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\EasyEncryption.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\EntityFramework.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\EntityFramework.SqlServer.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\SQLitePCLRaw.core.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Buffers.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Data.SQLite.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Data.SQLite.EF6.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Data.SQLite.Linq.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Memory.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Numerics.Vectors.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\EntityFramework.xml
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\EntityFramework.SqlServer.xml
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Buffers.xml
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Data.SQLite.xml
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Memory.xml
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Numerics.Vectors.xml
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.csprojAssemblyReference.cache
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.CadastroJanela.resources
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.FormLogin.resources
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.Properties.Resources.resources
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.csproj.GenerateResource.cache
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.csproj.CoreCompileInputs.cache
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.csproj.CopyComplete
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.exe
+C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.pdb

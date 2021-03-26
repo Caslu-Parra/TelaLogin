@@ -44,7 +44,7 @@ namespace TelaLogin
             this.lblTitulo.BackColor = System.Drawing.Color.DarkRed;
             this.lblTitulo.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(90, 29);
+            this.lblTitulo.Location = new System.Drawing.Point(139, 21);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(116, 42);
             this.lblTitulo.TabIndex = 0;
@@ -57,7 +57,8 @@ namespace TelaLogin
             this.txbSenha.ForeColor = System.Drawing.Color.Khaki;
             this.txbSenha.Location = new System.Drawing.Point(51, 237);
             this.txbSenha.Name = "txbSenha";
-            this.txbSenha.Size = new System.Drawing.Size(186, 30);
+            this.txbSenha.PasswordChar = '*';
+            this.txbSenha.Size = new System.Drawing.Size(291, 30);
             this.txbSenha.TabIndex = 1;
             // 
             // txbEmail
@@ -67,7 +68,7 @@ namespace TelaLogin
             this.txbEmail.ForeColor = System.Drawing.Color.Khaki;
             this.txbEmail.Location = new System.Drawing.Point(51, 153);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(186, 30);
+            this.txbEmail.Size = new System.Drawing.Size(291, 30);
             this.txbEmail.TabIndex = 2;
             // 
             // lblEmail
@@ -75,7 +76,7 @@ namespace TelaLogin
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(103, 109);
+            this.lblEmail.Location = new System.Drawing.Point(153, 110);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(77, 25);
             this.lblEmail.TabIndex = 4;
@@ -86,7 +87,7 @@ namespace TelaLogin
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.ForeColor = System.Drawing.Color.White;
-            this.lblSenha.Location = new System.Drawing.Point(103, 198);
+            this.lblSenha.Location = new System.Drawing.Point(153, 196);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(86, 25);
             this.lblSenha.TabIndex = 5;
@@ -97,9 +98,9 @@ namespace TelaLogin
             this.btnEntrar.BackColor = System.Drawing.Color.DarkRed;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
-            this.btnEntrar.Location = new System.Drawing.Point(14, 292);
+            this.btnEntrar.Location = new System.Drawing.Point(51, 292);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(121, 35);
+            this.btnEntrar.Size = new System.Drawing.Size(143, 35);
             this.btnEntrar.TabIndex = 6;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
@@ -110,9 +111,9 @@ namespace TelaLogin
             this.btnCadastrar.BackColor = System.Drawing.Color.DarkRed;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(146, 292);
+            this.btnCadastrar.Location = new System.Drawing.Point(200, 292);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(124, 35);
+            this.btnCadastrar.Size = new System.Drawing.Size(142, 35);
             this.btnCadastrar.TabIndex = 7;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -123,7 +124,7 @@ namespace TelaLogin
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(283, 339);
+            this.ClientSize = new System.Drawing.Size(389, 339);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.lblSenha);
