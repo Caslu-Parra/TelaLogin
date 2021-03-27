@@ -18,7 +18,7 @@ namespace TelaLogin.db
         public Banco()
         {
             // Aponta onde está o arquivo ".sql".
-            conexao = new SQLiteConnection("Data Source=C:/Users/renat/AppData/Local/AtividadeSQL-DAO/banco.sqlite3");
+            conexao = new SQLiteConnection("Data Source=banco.sqlite3");
 
             // Definir o caminho
             string caminhoLocalAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);

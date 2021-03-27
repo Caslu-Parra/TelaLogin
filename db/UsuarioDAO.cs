@@ -141,5 +141,45 @@ namespace TelaLogin.db
                 return false;
             }
         }
+
+        public static bool editar(Usuario user)
+        {
+            // comandos para manipulação:
+            // Instanciar e conectar ao banco:
+            Banco banco = new Banco();
+            try
+            {
+                banco.Conectar();
+                // Criar o objeto SQLiteCommand:
+                var cmd = banco.conexao.CreateCommand();
+                // Definir qual comando DML (Insert - Delete - Update) será executado:
+                cmd.CommandText = "UPDATE Usuarios SET Nome='" + user.Nome + "'," +
+                    " Email='" + user.Email+ "'," +
+                    " Senha= '" + user.Senha + "'," +
+                    " Nascimento= '" + user.Data + "'" +
+                    " WHERE Email= '" + user.Email + "';";
+                
+                // Definir a substituição dos parametros:
+                cmd.ExecuteNonQuery();
+
+            // Executar:
+            // Desconectar
+            banco.Desconectar();
+                // Se chegou até aqui é pq deu certo!
+                // Retornar true:
+                return true;
+            }
+            catch
+            {
+                // Desconectar
+                banco.Desconectar();
+                // Se chegou aqui é pq deu algum erro!
+                // Retornar false:
+               return false;
+            }
+        }
     }
+
+
 }
+

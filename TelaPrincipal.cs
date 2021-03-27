@@ -99,6 +99,41 @@ namespace TelaLogin
                 MessageBox.Show("Erro! Não existem dados a serem editados!");
             }
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (podeEditarApagar)
+            {
+                // Instanciar o objeto Funcionario:
+                Usuario user = new Usuario();
+                // Inserir os dados dos campos nos atributos do obj:
+                user.Nome = txbNome.Text;
+                user.Email = txbEmail.Text;
+                user.Senha = txbSenha.Text;
+                user.Data = txbDataNasc.Text;
+               
+                // Sabemos que o ID a editar está no iUsuario global!
+
+                if (db.UsuarioDAO.editar(user))
+                {
+                    MessageBox.Show("Informações modificadas!");
+                    txbNome.Clear();    
+                    txbEmail.Clear();
+                    txbSenha.Clear();
+                    txbDataNasc.Clear();
+                    atualizaTabela();
+                 
+                }
+                else
+                {
+                    MessageBox.Show("Erro1! Verifique os dados informados!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Erro! Não existem dados a serem editados!");
+            }
+        }
     }
 }
 

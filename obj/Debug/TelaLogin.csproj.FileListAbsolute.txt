@@ -94,3 +94,5 @@ C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin
 C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.csproj.CopyComplete
 C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.exe
 C:\lp_dir\VisualStudio\C#\UC-10\Atv-SQLite\TelaLogin - Copia\obj\Debug\TelaLogin.pdb
+C:\Users\Maxwel\source\repos\AtvMax\TelaLogin\bin\Debug\EasyEncryption.dll
+C:\Users\Maxwel\source\repos\AtvMax\TelaLogin\obj\Debug\TelaLogin.TelaPrincipal.resources
